@@ -5,14 +5,11 @@ console.log(data);
 //pokemon card from the first element
 console.log(data[0]);
 
-console.log(data);
-
-//You can start simple and just render a single 
-//pokemon card from the first element
-console.log(data[0]);
-
 // select the <ul> for placing pokemon cards
 const cardsList = document.querySelector('ul');
+
+
+
 
 for (i=0; i <= data.length-1; i++) {
 //   // create the HTML elements as defined in the template
@@ -33,9 +30,9 @@ for (i=0; i <= data.length-1; i++) {
   li.appendChild(img)
 
   
-    const skills = document.createElement('ul')
-    skills.setAttribute( 'class', 'card--text')
-    li.appendChild(skills)
+const skills = document.createElement('ul')
+skills.setAttribute( 'class', 'card--text')
+li.appendChild(skills)
 
 for (j = 0; j < data[i].stats.length; j++) {
   const skillLevels = document.createElement('li')
